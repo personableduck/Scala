@@ -298,4 +298,4 @@ abstract class DslDriverC[A:Manifest,B:Manifest] extends DslSnippet[A,B] with Ds
     (s"cc -std=c99 -O3 /tmp/snippet.c -o /tmp/snippet":ProcessBuilder).lines.foreach(Console.println _)
     (s"/tmp/snippet $a":ProcessBuilder).lines.foreach(Console.println _)
   }
-}
+} 
